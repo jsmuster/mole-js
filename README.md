@@ -1,2 +1,2 @@
 # mole-js
-Game Mole - Javascript Version
+Game Mole - Vanilla Javascript Version
