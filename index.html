@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mole Game</title>
+        <link rel="stylesheet" href="css/main.css">
+</head>
+<body onselectstart=«return false»>
+
+        <div class="more-settings-panel closed" id="more-settings-panel">
+                <div class="more-set-content-wrapp">
+                        <h2>Settings</h2>
+
+                        <form >
+                                <label class="container-label" id="cat-after-cat">
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                  Cat after cat
+                                </label>
+
+                                <hr>
+                                <label for="game-duration">Game duration</label>
+                                <input type="number" id="game-duration" value="60" min="5" step="1">
+                                <hr>
+                                <label for="min-meow-time">Min display cat time</label>
+                                <input type="number" id="min-meow-time" value="1" min="0.4" step="0.1">
+                                <hr>
+                                <label for="max-meow-time">Max display cat time</label>
+                                <input type="number" id="max-meow-time" value="2" min="0.5" step="0.1">
+                                <hr>
+                                <label for="meow-after-meow-time">Cat after cat pause time</label>
+                                <input type="number" id="meow-after-meow-time" value="1" min="0.3" step="0.1">
+
+                        </form>
+                </div>
+
+                <div class="open-more-settings" id="open-more-settings">
+                        <img src="images/gears.png" alt="settings">
+                </div>
+        </div>
+
+        <div class="control-panel">
+                <h1>Whack a Mole!</h1>
+                <span class="info-game">
+                        Hi!. Welcome to Mole game! <br>
+                        For playing press "START". Then, click to top cats' head for get a score. <br>
+                        For end game press "FINISH". <br>
+                        For reset score - press 'RESET';
+                </span>
+                <div class="control-panel-items">
+
+                        <div class="control-btn start" id="control-btn"></div>
+
+
+                        <div class="score">
+                                Score: <span id="score">0</span>/<span id="avaliable-score">0</span>
+                        </div>
+
+                        <div  id="reset" class="control-btn reset-btn"> </div>
+                </div>
+        </div>
+
+        <div class="game-wrapper">
+
+                <div class="hole">
+                        <img src="images/mole_behind.png" alt="dirt" class="hole_back" draggable="false".>
+                        <img src="images/mole_01.png" alt="mole" class="mole-pic" id="01">
+                        <div class="hole_front"></div>
+                </div>
+
+                <div class="hole">
+                        <img src="images/mole_behind.png" alt="dirt" class="hole_back" draggable="false">
+                        <img src="images/mole_01.png" alt="mole" class="mole-pic" id="02">
+                        <div class="hole_front"></div>
+                </div>
+
+                <div class="hole">
+                        <img src="images/mole_behind.png" alt="dirt" class="hole_back" draggable="false">
+                        <img src="images/mole_01.png" alt="mole" class="mole-pic" id="03">
+                        <div class="hole_front"></div>
+                </div>
+
+                <div class="hole">
+                        <img src="images/mole_behind.png" alt="dirt" class="hole_back" draggable="false">
+                        <img src="images/mole_01.png" alt="mole" class="mole-pic" id="04">
+                        <div class="hole_front"></div>
+                </div>
+
+                <div class="hole">
+                        <img src="images/mole_behind.png" alt="dirt" class="hole_back" draggable="false">
+                        <img src="images/mole_01.png" alt="mole" class="mole-pic" id="05">
+                        <div class="hole_front"></div>
+                </div>
+
+                <div class="hole">
+                        <img src="images/mole_behind.png" alt="dirt" class="hole_back" draggable="false">
+                        <img src="images/mole_01.png" alt="mole" class="mole-pic" id="06">
+                        <div class="hole_front"></div>
+                </div>
+
+                <div class="hole">
+                        <img src="images/mole_behind.png" alt="dirt" class="hole_back" draggable="false">
+                        <img src="images/mole_01.png" alt="mole" class="mole-pic" id="07">
+                        <div class="hole_front"></div>
+                </div>
+
+                <div class="hole">
+                        <img src="images/mole_behind.png" alt="dirt" class="hole_back" draggable="false">
+                        <img src="images/mole_01.png" alt="mole" class="mole-pic" id="08">
+                        <div class="hole_front"></div>
+                </div>
+
+                <div class="hole">
+                        <img src="images/mole_behind.png" alt="dirt" class="hole_back" draggable="false">
+                        <img src="images/mole_01.png" alt="mole" class="mole-pic" id="09">
+                        <div class="hole_front"></div>
+                </div>
+
+        </div>
+
+        <script src="js/main.js"></script>
+</body>
+</html>
